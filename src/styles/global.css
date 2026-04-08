@@ -1,53 +1,58 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
+	--mint-100: #e9e4ff;
+	--mint-200: #c7bbfd;
+	--mint-300: #a78bfa;
+	--mint-400: #7c3aed;
+	--mint-500: #6d28d9;
+	--amber-300: #93c5fd;
+	--ink-0: #f0f0f7;
+	--ink-50: #d0d0e8;
+	--ink-100: #a6a6c8;
+	--ink-200: #7c7ca4;
+	--ink-300: #57577a;
+	--ink-900: #14141e;
+	--ink-950: #0d0d16;
 	--box-shadow:
-		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
+		0 8px 24px color-mix(in oklab, var(--ink-950), transparent 70%),
+		0 20px 36px color-mix(in oklab, var(--ink-950), transparent 78%);
 }
 @font-face {
-	font-family: "Atkinson";
+	font-family: 'Atkinson';
 	src: url("/fonts/atkinson-regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
-	font-family: "Atkinson";
+	font-family: 'Atkinson';
 	src: url("/fonts/atkinson-bold.woff") format("woff");
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
+* {
+	box-sizing: border-box;
+}
 body {
-	font-family: "Atkinson", sans-serif;
+	font-family: 'Space Grotesk', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
+	background:
+		radial-gradient(circle at 16% 14%, #1e0a40 0%, transparent 35%),
+		radial-gradient(circle at 88% 6%, #0e1248 0%, transparent 30%),
+		linear-gradient(180deg, #0f0f1b 0%, #0d0d16 40%, #090912 100%);
+	background-attachment: fixed;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
-	font-size: 20px;
-	line-height: 1.7;
+	color: var(--ink-50);
+	font-size: 19px;
+	line-height: 1.72;
 }
 main {
-	width: 720px;
-	max-width: calc(100% - 2em);
+	width: min(1050px, calc(100% - 2rem));
 	margin: auto;
-	padding: 3em 1em;
+	padding: 2.6rem 0 3.2rem;
 }
 h1,
 h2,
@@ -56,20 +61,21 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: var(--ink-0);
 	line-height: 1.2;
 }
 h1 {
-	font-size: 3.052em;
+	font-size: clamp(2rem, 5vw, 3.5rem);
+	letter-spacing: -0.02em;
 }
 h2 {
-	font-size: 2.441em;
+	font-size: clamp(1.5rem, 2.7vw, 2.2rem);
 }
 h3 {
-	font-size: 1.953em;
+	font-size: clamp(1.2rem, 2.1vw, 1.7rem);
 }
 h4 {
-	font-size: 1.563em;
+	font-size: 1.26rem;
 }
 h5 {
 	font-size: 1.25em;
@@ -79,16 +85,16 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: var(--mint-200);
 }
 a:hover {
-	color: var(--accent);
+	color: var(--mint-100);
 }
 p {
 	margin-bottom: 1em;
 }
 .prose p {
-	margin-bottom: 2em;
+	margin-bottom: 1.4em;
 }
 textarea {
 	width: 100%;
@@ -106,33 +112,38 @@ img {
 	border-radius: 8px;
 }
 code {
-	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
-	border-radius: 2px;
+	padding: 2px 6px;
+	background: color-mix(in oklab, var(--ink-900), var(--mint-500) 20%);
+	border-radius: 6px;
+	font-size: 0.88em;
 }
 pre {
-	padding: 1.5em;
-	border-radius: 8px;
+	padding: 1.1em;
+	border-radius: 12px;
+	border: 1px solid color-mix(in oklab, var(--mint-300), transparent 70%);
+	background: color-mix(in oklab, var(--ink-950), #000 15%);
 }
 pre > code {
 	all: unset;
 }
 blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
+	border-left: 4px solid var(--mint-400);
+	padding: 0.1rem 0 0.1rem 1rem;
 	margin: 0;
-	font-size: 1.333em;
+	font-size: 1.16em;
+	color: var(--ink-100);
 }
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+	border-top: 1px solid color-mix(in oklab, var(--mint-300), transparent 75%);
 }
 @media (max-width: 720px) {
 	body {
-		font-size: 18px;
+		font-size: 17px;
 	}
 	main {
-		padding: 1em;
+		width: calc(100% - 1.2rem);
+		padding: 1.2rem 0 2rem;
 	}
 }
 
@@ -152,4 +163,15 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+@keyframes rise {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

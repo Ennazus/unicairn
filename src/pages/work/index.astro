@@ -1,0 +1,184 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_TITLE } from '../../consts';
+
+const items = (await getCollection('work')).sort(
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+
+const typeLabel: Record<string, string> = {
+	project: 'Project',
+	publication: 'Publication',
+	dataset: 'Dataset',
+	tool: 'Tool',
+};
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Work | ${SITE_TITLE}`}
+			description="Selected projects, publications, datasets, and tools from Unicairn."
+		/>
+		<style>
+			main {
+				width: min(1080px, calc(100% - 2rem));
+			}
+			h1 {
+				margin-top: 0.8rem;
+				margin-bottom: 0.4rem;
+			}
+			.lead {
+				color: var(--ink-200);
+				margin-top: 0;
+				margin-bottom: 2rem;
+				max-width: 64ch;
+			}
+			.work-grid {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 1rem;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			.work-card {
+				display: flex;
+				flex-direction: column;
+				padding: 1.2rem;
+				border-radius: 16px;
+				border: 1px solid color-mix(in oklab, var(--mint-400), transparent 77%);
+				background: color-mix(in oklab, var(--ink-900), transparent 18%);
+				text-decoration: none;
+				transition: border-color 200ms ease;
+			}
+			.work-card:hover {
+				border-color: color-mix(in oklab, var(--mint-300), transparent 54%);
+			}
+			.card-meta {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+				margin-bottom: 0.6rem;
+			}
+			.type-badge {
+				font-size: 0.78rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+				color: var(--mint-300);
+				background: color-mix(in oklab, var(--mint-500), transparent 85%);
+				padding: 0.2rem 0.55rem;
+				border-radius: 999px;
+			}
+			.card-date {
+				font-size: 0.85rem;
+				color: var(--ink-300);
+			}
+			.card-title {
+				margin: 0 0 0.5rem;
+				font-size: 1.1rem;
+				color: var(--ink-0);
+			}
+			.card-desc {
+				margin: 0 0 0.8rem;
+				font-size: 0.93rem;
+				color: var(--ink-200);
+				flex: 1;
+			}
+			.tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.35rem;
+				margin-top: auto;
+			}
+			.tag {
+				font-size: 0.78rem;
+				padding: 0.18rem 0.5rem;
+				border-radius: 999px;
+				border: 1px solid color-mix(in oklab, var(--mint-400), transparent 68%);
+				color: var(--ink-200);
+			}
+			.external-icon {
+				display: inline-block;
+				margin-left: 0.3rem;
+				font-size: 0.8rem;
+				opacity: 0.6;
+			}
+			@media (max-width: 720px) {
+				.work-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Work</h1>
+			<p class="lead">
+				Selected projects, publications, datasets, and tools. Add your own by dropping a
+				<code>.md</code> file in <code>src/content/work/</code>.
+			</p>
+			<ul class="work-grid">
+				{
+					items.map((item) => (
+						<li>
+							{item.data.url ? (
+								<a
+									class="work-card"
+									href={item.data.url}
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									<div class="card-meta">
+										<span class="type-badge">{typeLabel[item.data.type]}</span>
+										<span class="card-date">
+											<FormattedDate date={item.data.date} />
+										</span>
+									</div>
+									<h2 class="card-title">
+										{item.data.title}
+										<span class="external-icon">↗</span>
+									</h2>
+									<p class="card-desc">{item.data.description}</p>
+									{item.data.tags.length > 0 && (
+										<div class="tags">
+											{item.data.tags.map((tag) => (
+												<span class="tag">{tag}</span>
+											))}
+										</div>
+									)}
+								</a>
+							) : (
+								<div class="work-card">
+									<div class="card-meta">
+										<span class="type-badge">{typeLabel[item.data.type]}</span>
+										<span class="card-date">
+											<FormattedDate date={item.data.date} />
+										</span>
+									</div>
+									<h2 class="card-title">{item.data.title}</h2>
+									<p class="card-desc">{item.data.description}</p>
+									{item.data.tags.length > 0 && (
+										<div class="tags">
+											{item.data.tags.map((tag) => (
+												<span class="tag">{tag}</span>
+											))}
+										</div>
+									)}
+								</div>
+							)}
+						</li>
+					))
+				}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>

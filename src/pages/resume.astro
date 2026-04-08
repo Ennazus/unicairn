@@ -1,0 +1,380 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Resume | ${SITE_TITLE}`}
+			description="Resume and professional background for Unicairn transportation data analytics."
+		/>
+		<style>
+			main {
+				width: min(860px, calc(100% - 2rem));
+				padding-bottom: 4rem;
+			}
+			.resume-header {
+				padding: 2.4rem 0 1.6rem;
+				border-bottom: 1px solid color-mix(in oklab, var(--mint-400), transparent 75%);
+				margin-bottom: 2rem;
+			}
+			.resume-header h1 {
+				margin: 0 0 0.3rem;
+			}
+			.resume-header p {
+				margin: 0;
+				color: var(--ink-200);
+			}
+			.download-btn {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.4rem;
+				margin-top: 1.2rem;
+				padding: 0.65rem 1.1rem;
+				border-radius: 999px;
+				background: var(--mint-500);
+				color: var(--ink-950);
+				font-weight: 700;
+				font-size: 0.95rem;
+				text-decoration: none;
+				transition: transform 200ms ease;
+			}
+			.download-btn:hover {
+				transform: translateY(-1px);
+			}
+			section {
+				margin-bottom: 2.4rem;
+			}
+			h2 {
+				font-size: 1rem;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				color: var(--mint-300);
+				margin-bottom: 1rem;
+				padding-bottom: 0.4rem;
+				border-bottom: 1px solid color-mix(in oklab, var(--mint-400), transparent 80%);
+			}
+			.entry {
+				margin-bottom: 1.4rem;
+			}
+			.entry-head {
+				display: flex;
+				justify-content: space-between;
+				align-items: baseline;
+				gap: 1rem;
+				flex-wrap: wrap;
+			}
+			.entry-title {
+				font-weight: 700;
+				color: var(--ink-0);
+			}
+			.entry-org {
+				color: var(--ink-200);
+				font-size: 0.93rem;
+			}
+			.entry-date {
+				font-size: 0.88rem;
+				color: var(--ink-300);
+				white-space: nowrap;
+			}
+			.entry p {
+				margin: 0.5rem 0 0;
+				color: var(--ink-200);
+				font-size: 0.95rem;
+			}
+			.skills-grid {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.4rem;
+			}
+			.skill-tag {
+				padding: 0.3rem 0.75rem;
+				border-radius: 999px;
+				border: 1px solid color-mix(in oklab, var(--mint-400), transparent 65%);
+				color: var(--ink-100);
+				font-size: 0.88rem;
+			}
+			.placeholder-note {
+				font-size: 0.88rem;
+				color: var(--ink-400);
+				font-style: italic;
+				margin-top: 0.4rem;
+			}
+			.contact-row {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.4rem 1.2rem;
+				margin-top: 0.5rem;
+				color: var(--ink-200);
+				font-size: 0.92rem;
+			}
+			.contact-row a {
+				color: var(--mint-300);
+				text-decoration: none;
+			}
+			.contact-row a:hover {
+				color: var(--mint-100);
+			}
+			.summary {
+				color: var(--ink-100);
+				font-size: 0.97rem;
+				margin: 0;
+				line-height: 1.7;
+			}
+			.entry ul {
+				padding-left: 1.2rem;
+				margin: 0.5rem 0 0;
+				color: var(--ink-200);
+				font-size: 0.95rem;
+			}
+			.entry li {
+				margin-bottom: 0.3rem;
+			}
+			.pub {
+				margin-bottom: 0.9rem;
+				font-size: 0.92rem;
+				color: var(--ink-200);
+			}
+			.pub a {
+				color: var(--mint-300);
+				text-decoration: none;
+			}
+			.pub a:hover {
+				color: var(--mint-100);
+			}
+			.pub-cite {
+				font-size: 0.8rem;
+				color: var(--ink-400);
+				margin-left: 0.4rem;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="resume-header">
+				<h1>Suzanne Childress</h1>
+				<div class="contact-row">
+					<a href="mailto:childressssuzanne@gmail.com">childressssuzanne@gmail.com</a>
+					<span>(206) 856-8925</span>
+					<span>Bay Area, CA</span>
+					<a href="https://github.com/Ennazus" target="_blank" rel="noreferrer">github.com/Ennazus</a>
+				</div>
+				<a class="download-btn" href="/resume.pdf" download>↓ Download PDF</a>
+			</div>
+
+			<section>
+				<h2>Summary</h2>
+				<p class="summary">
+					Applied data scientist with 20 years of experience turning transportation data into
+					evidence that planning agencies can act on. Career spans survey programs, data systems,
+					applied research, team leadership, and policy analysis across three U.S. metropolitan
+					regions. Deep expertise in the conditions under which rigorous analysis actually
+					changes decisions — and in the many ways it fails to.
+				</p>
+			</section>
+
+			<section>
+				<h2>AI &amp; Evaluation Work</h2>
+				<div class="entry">
+					<ul>
+						<li>Co-organized and facilitated <em>AI Tools for Travel Analytics</em> at the 2025 Modeling Mobility Conference; led practitioner discussion on benefits, failure modes, institutional barriers, and societal downsides of LLM-assisted coding in applied analytics.</li>
+						<li>Advised a University of San Francisco fellowship team on classification metrics and evaluation design for comparing LLM outputs to expert judgment on household survey free-response data.</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h2>Experience</h2>
+
+				<div class="entry">
+					<div class="entry-head">
+						<span class="entry-title">Principal Data Scientist and Product Lead</span>
+						<span class="entry-date">2024–2025</span>
+					</div>
+					<div class="entry-org">Metropolitan Transportation Commission · SF Bay Area</div>
+					<ul>
+						<li>Defined requirements for and delivered Travel Model Two (TM2), a large multi-component regional activity-based model supporting Plan Bay Area 2050.</li>
+						<li>Transitioned consultant-developed system into a documented, maintainable in-house product using Python, R, SQL, and version control.</li>
+						<li>Advised executive leadership on model readiness, analytical uncertainty, and responsible use of complex model outputs in public-facing planning documents.</li>
+					</ul>
+				</div>
+
+				<div class="entry">
+					<div class="entry-head">
+						<span class="entry-title">Data Science Team Lead</span>
+						<span class="entry-date">2017–2024</span>
+					</div>
+					<div class="entry-org">Puget Sound Regional Council · Seattle Region</div>
+					<ul>
+						<li>Argued for, built, and led a five-person data science team from scratch; supported applied research, survey programs, equity analysis, and policy analytics.</li>
+						<li>Managed a $2M+ household travel survey program end-to-end: address-based sampling, GPS data engineering, confidentiality protocols, and public microdata dissemination.</li>
+						<li>Built and published <em>psrccensus</em>, an open-source R package enabling planners to access ACS, Decennial, and PUMS datasets independently.</li>
+						<li>Equity research: analyzed transit use disparities for Hispanic households and systematic undercounting of women's caretaking trips; translated findings into investment and data collection recommendations.</li>
+						<li>Designed and delivered agency-wide data warehouse; established shared code libraries and reproducible workflows.</li>
+						<li>Developed Puget Sound Trends, a public analytics platform integrating demographic, equity, and transportation data.</li>
+					</ul>
+				</div>
+
+				<div class="entry">
+					<div class="entry-head">
+						<span class="entry-title">Principal Modeler and Applied Research Lead</span>
+						<span class="entry-date">2012–2017</span>
+					</div>
+					<div class="entry-org">Puget Sound Regional Council</div>
+					<ul>
+						<li>Led development and application of SoundCast, the region's activity-based travel model; outputs directly defined transit route alignments and stop placements.</li>
+						<li>Provided behavioral modeling analysis directly informing Washington State road user charge legislation for a 4-million-person region.</li>
+						<li>Developed novel evaluation frameworks for autonomous vehicle scenarios; investigated cases where competing models produced divergent forecasts.</li>
+					</ul>
+				</div>
+
+				<div class="entry">
+					<div class="entry-head">
+						<span class="entry-title">Senior Data Scientist and Modeler</span>
+						<span class="entry-date">2007–2012</span>
+					</div>
+					<div class="entry-org">Denver Regional Council of Governments</div>
+					<ul>
+						<li>Directed FTA New Starts project, upgrading activity-based model to meet federal standards for transit project evaluation and grant eligibility.</li>
+						<li>Led applied analytics for Metro Vision long-range planning cycles (2008, 2012) and Vision 2040.</li>
+						<li>Estimated and validated nested and multinomial logit models for mode choice, destination choice, and time-of-day.</li>
+					</ul>
+				</div>
+
+				<div class="entry">
+					<div class="entry-head">
+						<span class="entry-title">Data Analyst and Modeler</span>
+						<span class="entry-date">2005–2007</span>
+					</div>
+					<div class="entry-org">Parsons Corporation</div>
+					<ul>
+						<li>Travel demand modeling for Alternatives Analysis and Environmental Assessment projects.</li>
+						<li>Validated and updated regional transportation models; authored technical documentation for environmental review.</li>
+					</ul>
+				</div>
+
+				<div class="entry">
+					<div class="entry-head">
+						<span class="entry-title">Research Associate</span>
+						<span class="entry-date">2003–2005</span>
+					</div>
+					<div class="entry-org">Northwestern University</div>
+					<ul>
+						<li>Systems performance and decision-making under uncertainty research in industrial engineering.</li>
+						<li>Co-authored peer-reviewed publication on parallel machine replacement under stochastic deterioration (<em>Naval Research Logistics</em>, 2005).</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h2>Education</h2>
+				<div class="entry">
+					<div class="entry-head">
+						<span class="entry-title">M.S., Industrial Engineering and Management Sciences</span>
+						<span class="entry-date">GPA 3.9</span>
+					</div>
+					<div class="entry-org">Northwestern University</div>
+					<p>Focus: Transportation Systems, Survey Sampling, Stochastic Processes, Statistics</p>
+				</div>
+				<div class="entry">
+					<div class="entry-head">
+						<span class="entry-title">B.A., Mathematics, <em>magna cum laude</em></span>
+						<span class="entry-date">GPA 3.7</span>
+					</div>
+					<div class="entry-org">Carleton College</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Skills</h2>
+				<div class="skills-grid">
+					{
+						[
+							'Python', 'R', 'SQL', 'C#', 'Git',
+							'Activity-based modeling', 'Behavioral choice modeling',
+							'Survey methodology & weighting', 'Data engineering',
+							'Scenario analysis', 'Equity analytics',
+							'R Shiny', 'PostGIS', 'GTFS / GTFS-RT',
+							'LLM evaluation', 'Long-range forecasting',
+						].map((s) => <span class="skill-tag">{s}</span>)
+					}
+				</div>
+			</section>
+
+			<section>
+				<h2>Selected Publications</h2>
+				<div class="pub">
+					Childress, S., Nichols, B., Charlton, B., &amp; Coe, S. (2015). Using an Activity-Based Model to Explore the Potential Impacts of Automated Vehicles. <em>Transportation Research Record.</em>{' '}
+					<a href="https://doi.org/10.3141/2493-11" target="_blank" rel="noreferrer">DOI: 10.3141/2493-11</a>
+					<span class="pub-cite">54 citations</span>
+				</div>
+				<div class="pub">
+					Chen, P., Shen, Q., &amp; Childress, S. (2018). A GPS Data-Based Analysis of Built Environment Influences on Bicyclist Route Preferences. <em>International Journal of Sustainable Transportation.</em>{' '}
+					<a href="https://doi.org/10.1080/15568318.2017.1349222" target="_blank" rel="noreferrer">DOI: 10.1080/15568318.2017.1349222</a>
+					<span class="pub-cite">149 citations</span>
+				</div>
+				<div class="pub">
+					Bradley, M., Bergman, A., Lee, M., Greene, E., &amp; Childress, S. (2015). Predicting and Applying Differential Response Rates in Address-Based Sampling for a Household Travel Survey. <em>Transportation Research Record.</em>{' '}
+					<a href="https://doi.org/10.3141/2526-14" target="_blank" rel="noreferrer">DOI: 10.3141/2526-14</a>
+				</div>
+				<div class="pub">
+					Childress, S. (2020). Towards Human-Scale Transport Metrics. <em>Transportation Research Board Annual Meeting.</em> <strong>Best Presentation Award.</strong>
+				</div>
+				<div class="pub">
+					Childress, S., &amp; Durango-Cohen, P. (2005). On Parallel Machine Replacement Problems with General Replacement Cost Functions and Stochastic Deterioration. <em>Naval Research Logistics.</em>{' '}
+					<a href="https://doi.org/10.1002/nav.20088" target="_blank" rel="noreferrer">DOI: 10.1002/nav.20088</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+			<section>
+				<h2>Experience</h2>
+				<div class="entry">
+					<div class="entry-head">
+						<span class="entry-title">Founder &amp; Principal Analyst</span>
+						<span class="entry-date">2024 – present</span>
+					</div>
+					<div class="entry-org">Unicairn</div>
+					<p>
+						Transportation data analytics consulting — ridership modelling, freight flow analysis,
+						mobility research, and data pipeline design for transit agencies and planning organisations.
+					</p>
+				</div>
+				<!-- Add more entries below this comment -->
+			</section>
+
+			<section>
+				<h2>Education</h2>
+				<div class="entry">
+					<div class="entry-head">
+						<span class="entry-title">Your Degree Here</span>
+						<span class="entry-date">Year</span>
+					</div>
+					<div class="entry-org">Your Institution</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Skills</h2>
+				<div class="skills-grid">
+					{
+						[
+							'Python', 'R', 'SQL', 'pandas', 'geopandas', 'PostGIS',
+							'GTFS / GTFS-RT', 'scikit-learn', 'Tableau', 'dbt',
+							'Transportation modelling', 'Geospatial analysis',
+						].map((s) => <span class="skill-tag">{s}</span>)
+					}
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
