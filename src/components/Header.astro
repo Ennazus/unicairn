@@ -72,7 +72,22 @@ import Logo from '../assets/unicairn_logo.png';
 	.brand a,
 	.brand a.active {
 		text-decoration: none;
-		color: var(--mint-200);
+		background: linear-gradient(
+			90deg,
+			var(--mint-200) 0%,
+			#e0d0ff 40%,
+			var(--mint-300) 55%,
+			var(--mint-200) 100%
+		);
+		background-size: 200% auto;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		animation: shimmer 6s linear infinite;
+	}
+	@keyframes shimmer {
+		0% { background-position: 0% center; }
+		100% { background-position: 200% center; }
 	}
 	nav {
 		display: flex;
