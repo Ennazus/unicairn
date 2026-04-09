@@ -6,3 +6,5 @@ type: publication
 url: "https://doi.org/10.3141/2493-11"
 tags: ["Autonomous vehicles", "Activity-based modeling", "Scenario analysis", "Forecast methodology"]
 ---
+
+[Download PDF](https://psrc.github.io/attachments/2014/TRB-2015-Automated-Vehicles-Rev2.pdf)

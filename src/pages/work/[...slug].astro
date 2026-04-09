@@ -1,0 +1,169 @@
+---
+import { Image } from 'astro:assets';
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_TITLE } from '../../consts';
+
+export async function getStaticPaths() {
+	const items = await getCollection('work');
+	return items.map((item) => ({
+		params: { slug: item.id },
+		props: item,
+	}));
+}
+type Props = CollectionEntry<'work'>;
+
+const item = Astro.props;
+const { Content } = await render(item);
+const { title, description, date, url, tags, type, image } = item.data;
+
+const typeLabel: Record<string, string> = {
+	project: 'Project',
+	publication: 'Publication',
+	dataset: 'Dataset',
+	tool: 'Tool',
+};
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`${title} | ${SITE_TITLE}`} description={description} />
+		<style>
+			main {
+				width: min(820px, calc(100% - 2rem));
+				padding-bottom: 4rem;
+			}
+			.back {
+				display: inline-block;
+				margin: 1.6rem 0 0;
+				font-size: 0.88rem;
+				color: var(--mint-300);
+				text-decoration: none;
+			}
+			.back:hover { color: var(--mint-100); }
+			.hero-image {
+				width: 100%;
+				margin: 1.2rem 0;
+			}
+			.hero-image img {
+				width: 100%;
+				border-radius: 18px;
+				display: block;
+			}
+			.title-block {
+				padding: 1.2rem 0 1rem;
+				border-bottom: 1px solid color-mix(in oklab, var(--mint-400), transparent 75%);
+				margin-bottom: 1.8rem;
+			}
+			.meta {
+				display: flex;
+				align-items: center;
+				gap: 0.6rem;
+				margin-bottom: 0.6rem;
+			}
+			.type-badge {
+				font-size: 0.78rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+				color: var(--mint-300);
+				background: color-mix(in oklab, var(--mint-500), transparent 85%);
+				padding: 0.2rem 0.55rem;
+				border-radius: 999px;
+			}
+			.date {
+				font-size: 0.88rem;
+				color: var(--ink-300);
+			}
+			h1 {
+				margin: 0.3rem 0 0.8rem;
+				font-size: clamp(1.6rem, 3vw, 2.4rem);
+			}
+			.description {
+				color: var(--ink-200);
+				margin: 0 0 1rem;
+				font-size: 1rem;
+				line-height: 1.65;
+			}
+			.tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.35rem;
+				margin-bottom: 0.8rem;
+			}
+			.tag {
+				font-size: 0.78rem;
+				padding: 0.18rem 0.5rem;
+				border-radius: 999px;
+				border: 1px solid color-mix(in oklab, var(--mint-400), transparent 68%);
+				color: var(--ink-200);
+			}
+			.ext-link {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.35rem;
+				padding: 0.55rem 1.1rem;
+				border-radius: 999px;
+				background: var(--mint-500);
+				color: var(--ink-950);
+				font-weight: 700;
+				font-size: 0.9rem;
+				text-decoration: none;
+				margin-top: 0.4rem;
+				transition: transform 200ms ease;
+			}
+			.ext-link:hover { transform: translateY(-1px); }
+			.prose {
+				color: var(--ink-100);
+				line-height: 1.75;
+				font-size: 0.97rem;
+			}
+			.prose a {
+				color: var(--mint-300);
+				text-decoration: none;
+			}
+			.prose a:hover { color: var(--mint-100); }
+			.prose h2 {
+				color: var(--ink-0);
+				margin-top: 2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<a class="back" href="/work">← Back to Work</a>
+			{image && (
+				<div class="hero-image">
+					<Image src={image} alt={title} width={820} height={400} />
+				</div>
+			)}
+			<div class="title-block">
+				<div class="meta">
+					<span class="type-badge">{typeLabel[type]}</span>
+					<span class="date"><FormattedDate date={date} /></span>
+				</div>
+				<h1>{title}</h1>
+				<p class="description">{description}</p>
+				{tags.length > 0 && (
+					<div class="tags">
+						{tags.map((tag) => <span class="tag">{tag}</span>)}
+					</div>
+				)}
+				{url && (
+					<a class="ext-link" href={url} target="_blank" rel="noreferrer noopener">
+						View project ↗
+					</a>
+				)}
+			</div>
+			<div class="prose">
+				<Content />
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

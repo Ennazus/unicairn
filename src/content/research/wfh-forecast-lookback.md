@@ -26,3 +26,7 @@ Inelasticity of auto VMT is unfortunately a strong characteristic of the U.S. bu
 As planners, the lesson is that we need to be more careful about how we translate behavioral change into promises about system-level outcomes. There is only so much we can do at an aggregate scale to change usage without giant policy or systems change. There isn't a magic bullet to reduce VMT.
 
 That's also why I like to focus back on improving individual experiences these days — helping people get to the activities that make them thrive, instead of looking at system metrics — because that's where we could actually make a difference.
+
+---
+
+*Related: In 2022 I presented on the COVID-era impacts on work, VMT, and travel behavior to the PSRC Transportation Demand Management committee. [View the presentation](https://www.psrc.org/media/8974).*

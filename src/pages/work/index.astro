@@ -143,56 +143,31 @@ const typeLabel: Record<string, string> = {
 				{
 					items.map((item) => (
 						<li>
-							{item.data.url ? (
-								<a
-									class="work-card"
-									href={item.data.url}
-									target="_blank"
-									rel="noreferrer noopener"
-								>
-									<div class="card-meta">
-										<span class="type-badge">{typeLabel[item.data.type]}</span>
-										<span class="card-date">
-											<FormattedDate date={item.data.date} />
-										</span>
-									</div>
-									<h2 class="card-title">
-										{item.data.title}
-										<span class="external-icon">↗</span>
-									</h2>
-									<p class="card-desc">{item.data.description}</p>
-									{item.data.tags.length > 0 && (
-										<div class="tags">
-											{item.data.tags.map((tag) => (
-												<span class="tag">{tag}</span>
-											))}
-										</div>
-									)}
-								</a>
-							) : (
-								<div class="work-card">
+							<a class="work-card" href={`/work/${item.id}/`}>
 								{item.data.image && (
 									<div class="card-image">
 										<Image src={item.data.image} alt={item.data.title} width={600} height={140} />
 									</div>
 								)}
 								<div class="card-meta">
-										<span class="type-badge">{typeLabel[item.data.type]}</span>
-										<span class="card-date">
-											<FormattedDate date={item.data.date} />
-										</span>
-									</div>
-									<h2 class="card-title">{item.data.title}</h2>
-									<p class="card-desc">{item.data.description}</p>
-									{item.data.tags.length > 0 && (
-										<div class="tags">
-											{item.data.tags.map((tag) => (
-												<span class="tag">{tag}</span>
-											))}
-										</div>
-									)}
+									<span class="type-badge">{typeLabel[item.data.type]}</span>
+									<span class="card-date">
+										<FormattedDate date={item.data.date} />
+									</span>
 								</div>
-							)}
+								<h2 class="card-title">
+									{item.data.title}
+									{item.data.url && <span class="external-icon">↗</span>}
+								</h2>
+								<p class="card-desc">{item.data.description}</p>
+								{item.data.tags.length > 0 && (
+									<div class="tags">
+										{item.data.tags.map((tag) => (
+											<span class="tag">{tag}</span>
+										))}
+									</div>
+								)}
+							</a>
 						</li>
 					))
 				}
