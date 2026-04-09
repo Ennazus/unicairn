@@ -155,7 +155,7 @@ import { SITE_TITLE } from '../consts';
 	</head>
 	<body>
 		<Header />
-		<main>
+		<main id="main-content">
 			<div class="resume-header">
 				<h1>Suzanne Childress</h1>
 				<div class="contact-row">
@@ -173,8 +173,7 @@ import { SITE_TITLE } from '../consts';
 					Applied data scientist with 20 years of experience turning transportation data into
 					evidence that planning agencies can act on. Career spans survey programs, data systems,
 					applied research, team leadership, and policy analysis across three U.S. metropolitan
-					regions. Deep expertise in the conditions under which rigorous analysis actually
-					changes decisions — and in the many ways it fails to.
+					regions.
 				</p>
 			</section>
 
@@ -202,11 +201,11 @@ import { SITE_TITLE } from '../consts';
 					<div class="entry-org">Puget Sound Regional Council · Seattle Region</div>
 					<ul>
 						<li>Argued for, built, and led a five-person data science team from scratch; supported applied research, survey programs, equity analysis, and policy analytics.</li>
-							<li>Provided analytical management for a $2M+ household travel survey program end-to-end (jointly with Brian Lee): address-based sampling design, confidentiality protocols, and public microdata dissemination.</li>
-						<li>My team built and published <em>psrccensus</em>, an open-source R package enabling planners to access ACS, Decennial, and PUMS datasets independently.</li>
-						<li>Equity research: analyzed transit use disparities for Hispanic households and systematic undercounting of women’s caretaking trips; translated findings into investment and data collection recommendations.</li>
+						<li>Provided analytical management for a <a href="https://www.psrc.org/household-travel-survey-program" target="_blank" rel="noreferrer">$2M+ household travel survey program</a> end-to-end (jointly with Brian Lee): address-based sampling design, confidentiality protocols, and public microdata dissemination.</li>
+						<li>My team built and published <a href="https://github.com/psrc/psrccensus" target="_blank" rel="noreferrer"><em>psrccensus</em></a>, an open-source R package enabling planners to access ACS, Decennial, and PUMS datasets independently.</li>
+						<li>Equity research: analyzed transit use disparities for Hispanic households and <a href="/research/womens-travel-needs">systematic undercounting of women's caretaking trips</a>; translated findings into investment and data collection recommendations.</li>
 						<li>Led team design and delivery of agency-wide data warehouse; established shared code libraries and reproducible workflows.</li>
-						<li>Developed Puget Sound Trends, a public analytics platform integrating demographic, equity, and transportation data.</li>
+						<li>Developed <a href="https://www.psrc.org/our-work/puget-sound-trends" target="_blank" rel="noreferrer">Puget Sound Trends</a>, a public analytics platform integrating demographic, equity, and transportation data.</li>
 						<li>Presented COVID-era impacts on work patterns, VMT, and travel behavior to the regional Transportation Demand Management committee; <a href="https://www.psrc.org/media/8974" target="_blank" rel="noreferrer">view presentation</a>.</li>
 					</ul>
 				</div>
@@ -218,7 +217,7 @@ import { SITE_TITLE } from '../consts';
 					</div>
 					<div class="entry-org">Puget Sound Regional Council</div>
 					<ul>
-						<li>Managed the team developing and applying SoundCast, the region’s activity-based travel model; outputs directly defined transit route alignments and stop placements.</li>
+						<li>Managed the team developing and applying <a href="/work/soundcast">SoundCast</a>, the region's activity-based travel model; outputs directly defined transit route alignments and stop placements.</li>
 						<li>Provided analysis directly informing Washington State road user charge legislation for a 4-million-person region.</li>
 						<li>Developed novel evaluation frameworks for autonomous vehicle scenarios; investigated cases where competing models produced divergent forecasts.</li>
 					</ul>
@@ -315,12 +314,23 @@ import { SITE_TITLE } from '../consts';
 					<a href="https://doi.org/10.3141/2526-14" target="_blank" rel="noreferrer">DOI: 10.3141/2526-14</a>
 				</div>
 				<div class="pub">
-					Childress, S. (2020). Towards Human-Scale Transport Metrics. <em>Transportation Research Board Annual Meeting.</em> <strong>Best Presentation Award.</strong>
+					Childress, S. (2020). Towards Human-Scale Transport Metrics. <em>Transportation Research Board Annual Meeting.</em> <strong>Best Presentation Award.</strong>{' '}
+					<a href="/work/human-scale-metrics">Slides</a>
 				</div>
 				<div class="pub">
 					Childress, S., &amp; Durango-Cohen, P. (2005). On Parallel Machine Replacement Problems with General Replacement Cost Functions and Stochastic Deterioration. <em>Naval Research Logistics.</em>{' '}
 					<a href="https://doi.org/10.1002/nav.20088" target="_blank" rel="noreferrer">DOI: 10.1002/nav.20088</a>
 				</div>
+			</section>
+
+			<section>
+				<h2>Selected Data Stories &amp; Reports</h2>
+				<div class="pub"><a href="/research/womens-travel-needs">Women's Diverse Travel Needs Often Go Overlooked</a> — PSRC Household Travel Survey analysis, 2023</div>
+				<div class="pub"><a href="/research/aapi-diversity-experiences">The Diversity of Asian and Pacific Islander Experiences</a> — Census equity analysis, 2022</div>
+				<div class="pub"><a href="/research/hts-data-story-collaboration">Discovering Household Travel Data Stories Through Collaboration</a> — PSRC data team, 2021</div>
+				<div class="pub"><a href="https://www.psrc.org/media/7771" target="_blank" rel="noreferrer">LGBTQ+ Identity and Transportation in the Puget Sound Region</a> — HTS analysis, 2022</div>
+				<div class="pub"><a href="https://www.psrc.org/media/8974" target="_blank" rel="noreferrer">COVID-Era Impacts on Work Patterns, VMT, and Travel Behavior</a> — TDM Committee presentation, 2022</div>
+				<div class="pub"><a href="/research/accessibility-metrics-quandary">The Quandary of Accessibility Metrics</a> — PSRC data blog, 2015</div>
 			</section>
 
 			<section>

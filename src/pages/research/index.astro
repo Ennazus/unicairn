@@ -15,7 +15,7 @@ const posts = (await getCollection('research')).sort(
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`Blog | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<BaseHead title={`Ideas | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
 		<style>
 			main {
 				width: min(1080px, calc(100% - 2rem));
@@ -66,10 +66,10 @@ const posts = (await getCollection('research')).sort(
 			}
 			.date {
 				margin: 0.65rem 0 0;
-				color: var(--ink-300);
+				color: var(--ink-200);
 				font-size: 0.9rem;
 			}
-			ul li a:hover h4,
+			ul li a:hover h2,
 			ul li a:hover .date {
 				color: var(--mint-100);
 			}
@@ -95,7 +95,7 @@ const posts = (await getCollection('research')).sort(
 	</head>
 	<body>
 		<Header />
-		<main>
+		<main id="main-content">
 			<h1>Ideas</h1>
 			<section>
 				<ul>
@@ -106,7 +106,7 @@ const posts = (await getCollection('research')).sort(
 									{post.data.heroImage && (
 										<Image width={720} height={360} src={post.data.heroImage} alt="" />
 									)}
-									<h4 class="title">{post.data.title}</h4>
+									<h2 class="title">{post.data.title}</h2>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
 									</p>

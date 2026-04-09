@@ -20,19 +20,30 @@ While writing this post, I learned that [Native Hawaiian and Pacific Islander pe
 
 Asian workers as an overall group have one of the highest median personal earnings at \$53,000 annually. On the other hand, Native Hawaiian and Other Pacific Islander alone workers have some of the lowest median earnings at \$32,000.
 
-Median earnings vary widely across different detailed groups. Burmese, Other Native Pacific Islander, Nepalese, Fijian, Marshallese, and Hmong workers in the region have median earnings of less than \$30,000 per year. On the other end, Asian Indian workers have median earnings of over \$97,000 per year.
+Median earnings vary widely across detailed groups:
 
-*[Interactive earnings charts by broad and detailed groups are available in the [original post](https://psrc.github.io/2022/Asian-Pacific-Islander).]*
+| Group | Median annual earnings |
+|---|---|
+| Asian Indian | \$97,000+ |
+| (Regional median) | ~\$53,000 (Asian overall) |
+| Burmese | <\$30,000 |
+| Nepalese | <\$30,000 |
+| Fijian | <\$30,000 |
+| Marshallese | <\$30,000 |
+| Hmong | <\$30,000 |
+| Native Hawaiian & Pacific Islander | \$32,000 |
+
+*(Source: ACS PUMS, workers working more than 10 hours per week)*
 
 ## Education levels vary widely
 
-Similarly to median earnings, Asian Alone people as a broad group have some of the highest education levels in the region by race, with 56% of adults over 25 having obtained a bachelor's degree. Only 11% of Native Hawaiian and Pacific Islander adults over 25 had obtained a bachelor's degree.
+Asian Alone people as a broad group have some of the highest education levels in the region by race, with **56% of adults over 25 having obtained a bachelor's degree**. Only **11% of Native Hawaiian and Pacific Islander adults** over 25 had obtained a bachelor's degree.
 
-How do education levels for Asian and Pacific Islander adults vary across the region? The share of Asian alone adults over 25 with a Bachelor's degree or higher ranges broadly: over 60% of Asian Alone adults in King County have a bachelor's degree, compared to 30% of Asian Alone adults in Pierce County.
+Education also varies sharply by geography: **over 60% of Asian Alone adults in King County** have a bachelor's degree, compared to **30% of Asian Alone adults in Pierce County**.
 
-Native Hawaiian and Pacific Islander adults have low levels of education throughout the region — around 10% of adults have a bachelor's degree or higher.
+Native Hawaiian and Pacific Islander adults have low levels of education throughout the region — around 10% of adults have a bachelor's degree or higher, consistently across counties.
 
-*[Interactive maps and charts by geography available in the [original post](https://psrc.github.io/2022/Asian-Pacific-Islander).]*
+*(Source: ACS Table C15002D: Educational Attainment by Race, 2015-2019)*
 
 ## Intersecting diverse heritage and geography
 

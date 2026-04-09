@@ -4,7 +4,7 @@ description: "So much of planning and modeling work happens inside contradiction
 pubDate: 2026-04-09
 ---
 
-This week I had a really thoughtful conversation with a coworker and it's stayed with me. So much of planning and modeling work happens inside contradictions.
+This week I had a really thoughtful conversation with a coworker. So much of planning and modeling work happens inside contradictions.
 
 We adopt climate targets while still enforcing minimum parking and protecting exclusionary zoning. We require farebox recovery for transit while highways are deeply subsidized. We say equity is a priority, but often cannot even use the word in federal funding agreements. We say we want data-driven decisions, but only when the data supports what is politically safe.
 

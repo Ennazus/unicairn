@@ -77,7 +77,38 @@ body::before {
 		radial-gradient(1px 1px at 95% 82%, rgba(255,255,255,0.4) 0%, transparent 100%),
 		radial-gradient(1px 1px at 29% 95%, rgba(255,255,255,0.3) 0%, transparent 100%),
 		radial-gradient(1.5px 1.5px at 68% 4%, rgba(255,255,255,0.5) 0%, transparent 100%),
-		radial-gradient(1px 1px at 84% 14%, rgba(167,139,250,0.35) 0%, transparent 100%);
+		radial-gradient(1px 1px at 84% 14%, rgba(167,139,250,0.35) 0%, transparent 100%),
+		radial-gradient(2px 2px at 44% 33%, rgba(255,255,255,0.6) 0%, transparent 100%),
+		radial-gradient(1px 1px at 9% 62%, rgba(200,180,255,0.4) 0%, transparent 100%),
+		radial-gradient(1px 1px at 51% 79%, rgba(255,255,255,0.35) 0%, transparent 100%),
+		radial-gradient(1.5px 1.5px at 71% 35%, rgba(255,255,255,0.45) 0%, transparent 100%),
+		radial-gradient(1px 1px at 26% 47%, rgba(167,139,250,0.3) 0%, transparent 100%),
+		radial-gradient(1px 1px at 83% 56%, rgba(255,255,255,0.35) 0%, transparent 100%),
+		radial-gradient(2px 2px at 15% 89%, rgba(200,180,255,0.5) 0%, transparent 100%),
+		radial-gradient(1px 1px at 62% 92%, rgba(255,255,255,0.3) 0%, transparent 100%),
+		radial-gradient(1px 1px at 37% 15%, rgba(255,255,255,0.45) 0%, transparent 100%),
+		radial-gradient(1.5px 1.5px at 90% 70%, rgba(167,139,250,0.4) 0%, transparent 100%),
+		radial-gradient(1px 1px at 5% 28%, rgba(255,255,255,0.5) 0%, transparent 100%),
+		radial-gradient(1px 1px at 77% 44%, rgba(200,180,255,0.35) 0%, transparent 100%),
+		radial-gradient(2px 2px at 48% 60%, rgba(255,255,255,0.55) 0%, transparent 100%),
+		radial-gradient(1px 1px at 19% 35%, rgba(167,139,250,0.35) 0%, transparent 100%),
+		radial-gradient(1px 1px at 97% 22%, rgba(255,255,255,0.4) 0%, transparent 100%);
+}
+.skip-link {
+	position: absolute;
+	top: -100%;
+	left: 1rem;
+	z-index: 200;
+	padding: 0.5rem 1rem;
+	background: var(--mint-400);
+	color: #fff;
+	border-radius: 4px;
+	font-size: 0.9rem;
+	text-decoration: none;
+	font-weight: 700;
+}
+.skip-link:focus {
+	top: 0.75rem;
 }
 main {
 	width: min(1050px, calc(100% - 2rem));
