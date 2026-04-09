@@ -15,7 +15,7 @@ const posts = (await getCollection('research')).sort(
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`Ideas | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<BaseHead title={`Field Notes | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
 		<style>
 			main {
 				width: min(1080px, calc(100% - 2rem));
@@ -96,7 +96,7 @@ const posts = (await getCollection('research')).sort(
 	<body>
 		<Header />
 		<main id="main-content">
-			<h1>Ideas</h1>
+			<h1>Field Notes</h1>
 			<section>
 				<ul>
 					{
