@@ -1,12 +1,17 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+import { Image } from 'astro:assets';
+import Logo from '../assets/unicairn_logo.png';
 ---
 
 <header>
 	<nav>
 		<div class="brand-block">
-			<h2 class="brand"><a href="/">{SITE_TITLE}</a></h2>
+			<div class="brand-row">
+				<Image src={Logo} alt="Unicairn logo" width={32} height={32} class="brand-logo" />
+				<h2 class="brand"><a href="/">{SITE_TITLE}</a></h2>
+			</div>
 			<p class="tagline">Where transportation data becomes evidence</p>
 		</div>
 		<div class="internal-links" aria-label="Main navigation">
@@ -37,6 +42,18 @@ import HeaderLink from './HeaderLink.astro';
 		display: flex;
 		flex-direction: column;
 		gap: 0.1rem;
+	}
+	.brand-row {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	.brand-logo {
+		width: 32px;
+		height: 32px;
+		object-fit: contain;
+		border-radius: 4px;
+		flex-shrink: 0;
 	}
 	.brand {
 		margin: 0;

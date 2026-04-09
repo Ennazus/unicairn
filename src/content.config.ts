@@ -16,13 +16,15 @@ const research = defineCollection({
 
 const work = defineCollection({
 	loader: glob({ base: './src/content/work', pattern: '**/*.{md,mdx}' }),
-	schema: z.object({
+	schema: ({ image }) =>
+		z.object({
 		title: z.string(),
 		description: z.string(),
 		date: z.coerce.date(),
 		url: z.string().url().optional(),
 		tags: z.array(z.string()).default([]),
 		type: z.enum(['project', 'publication', 'dataset', 'tool']).default('project'),
+		image: z.optional(image()),
 	}),
 });
 

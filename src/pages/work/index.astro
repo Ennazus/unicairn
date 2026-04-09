@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
@@ -110,6 +111,19 @@ const typeLabel: Record<string, string> = {
 				font-size: 0.8rem;
 				opacity: 0.6;
 			}
+			.card-image {
+				width: calc(100% + 2.4rem);
+				margin: -1.2rem -1.2rem 1rem -1.2rem;
+				height: 140px;
+				overflow: hidden;
+				border-radius: 16px 16px 0 0;
+			}
+			.card-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
 			@media (max-width: 720px) {
 				.work-grid {
 					grid-template-columns: 1fr;
@@ -157,7 +171,12 @@ const typeLabel: Record<string, string> = {
 								</a>
 							) : (
 								<div class="work-card">
-									<div class="card-meta">
+								{item.data.image && (
+									<div class="card-image">
+										<Image src={item.data.image} alt={item.data.title} width={600} height={140} />
+									</div>
+								)}
+								<div class="card-meta">
 										<span class="type-badge">{typeLabel[item.data.type]}</span>
 										<span class="card-date">
 											<FormattedDate date={item.data.date} />

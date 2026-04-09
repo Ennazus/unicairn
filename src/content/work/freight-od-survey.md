@@ -4,4 +4,5 @@ description: "Led development and application of the Puget Sound region's activi
 date: 2016-01-01
 type: project
 tags: ["Activity-based modeling", "Python", "C#", "Long-range planning", "Policy"]
+image: "../../assets/soundcast_results.png"
 ---
