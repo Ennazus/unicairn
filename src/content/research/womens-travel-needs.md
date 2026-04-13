@@ -77,3 +77,7 @@ With increased care-taking demands, and with women more likely to live in povert
 Transit, especially, needs to be designed around women of color, since they use transit more than other groups.
 
 [Download the data used in this analysis.](https://www.psrc.org/media/7505)
+
+---
+
+**Related:** [What Does 'Transportation Need' Mean at a 30-Year Horizon?](/research/transportation-need-30-year) · [COVID, Work, and Travel: Impacts on VMT and Mode](/work/covid-vmt-presentation)

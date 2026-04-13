@@ -6,3 +6,9 @@ url: "https://docs.google.com/presentation/d/1Vr3FF6FENbujae9y_Dr7snft7VDC7zIW/e
 type: publication
 tags: ["Metrics", "Accessibility", "Travel behavior", "Equity", "Measurement"]
 ---
+
+Presented at the TRB Annual Meeting in 2020, this paper argues that transportation systems should be evaluated by whether people can actually reach the activities that matter to them — not by optimizing for speed, throughput, or other system-level proxies that are only loosely connected to human outcomes. Received Best Presentation Award.
+
+---
+
+**Related:** [What Does 'Transportation Need' Mean at a 30-Year Horizon?](/research/transportation-need-30-year) · [The Quandary of Accessibility Metrics](/research/accessibility-metrics-quandary)

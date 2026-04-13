@@ -22,3 +22,7 @@ Transportation needs can instead be measured empirically by focusing on experien
 These measures allow us, first, to track over time whether transportation needs are actually being met as people experience them. When paired with the contextual information already collected in household travel surveys, they also allow us to examine which underlying conditions are associated with transportation security. Vehicle access, land use context, household resources, caregiving responsibilities, physical ability, and social connectedness become variables to be tested rather than assumptions to be asserted.
 
 Even a small, stable set of experience-based questions, repeated over time and across geographies, could let us ask a simpler and more honest question: are we becoming better or worse at meeting basic transportation needs, and what conditions seem to matter most?
+
+---
+
+**Related:** [Women's Diverse Travel Needs Often Go Overlooked](/research/womens-travel-needs) · [Towards Human-Scale Transport Metrics](/work/human-scale-metrics)
