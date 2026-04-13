@@ -5,7 +5,7 @@ pubDate: 2026-04-13
 tags: ["passive data", "household travel survey", "equity", "active transportation", "evidence"]
 ---
 
-![My daughter on a transit bus, going to daycare](/src/assets/brigid_bus.jpg)
+![My daughter on a transit bus, going to daycare](/Brigid_Bus.jpg)
 *My daughter, on the bus to daycare.*
 
 ---
@@ -34,4 +34,4 @@ What I find myself imagining is a single place where these layers live together,
 
 The counting problem is largely solved. Building the infrastructure to knit everything else together is the harder problem, and the more important one, and the field is only beginning to understand what it would take.
 
-My daughter on that bus is the trip the data doesn't see. Getting her needs, and the needs of everyone like her, into the analytical picture is not just an equity obligation. It is what it will take to build a transportation system that actually works.
+My daughter on that bus is the trip the data doesn't see. Getting her needs, and the needs of everyone like her, into the analytical picture is not just an equity obligation. It is what it will take to build a transportation system that actually works for humans.
