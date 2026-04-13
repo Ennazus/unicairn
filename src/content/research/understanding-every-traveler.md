@@ -5,10 +5,10 @@ pubDate: 2026-04-13
 tags: ["passive data", "household travel survey", "equity", "active transportation", "evidence"]
 ---
 
-![My daughter on a transit bus, going to daycare](/Brigid_Bus.jpg)
-*My daughter, on the bus to daycare.*
-
----
+<figure style="float: right; margin: 0 0 1rem 1.5rem; width: 22%; min-width: 120px;">
+  <img src="/Brigid_Bus.jpg" alt="My daughter on a transit bus, going to daycare" style="width: 100%; border-radius: 8px; display: block;" />
+  <figcaption style="font-size: 0.78rem; color: #a6a6c8; margin-top: 0.4rem; line-height: 1.4;">My daughter, on the bus to daycare.</figcaption>
+</figure>
 
 My daughter and I are on a transit bus heading to her daycare. She is two years old, which means she is invisible to the data: she does not generate a boarding event. I am one boarding, recorded at AM peak on a transit segment, and what that record cannot carry is that this is a care trip rather than a commute, that the route only works because the daycare is within walking distance of the stop, that I will make a second trip to work after drop-off, that if the frequency on this route dropped I would be driving, that I am one of millions of women whose travel patterns look nothing like the peak-period single-destination commute that transportation systems were built around. My needs, and hers, and those of everyone like us, only become visible when someone asks.
 
