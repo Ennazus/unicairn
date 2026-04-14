@@ -1,6 +1,6 @@
 ---
 title: "Contradiction and Conflict Sits at the Heart of Planning"
-description: "So much of planning and modeling work happens inside contradictions. The challenge isn't to eliminate complexity — it's to be honest about it, and keep showing up with curiosity and humility anyway."
+description: "So much of planning and modeling work happens inside contradictions. The challenge isn't to eliminate complexity: it's to be honest about it, and keep showing up with curiosity and humility anyway."
 pubDate: 2026-04-09
 ---
 
@@ -12,6 +12,6 @@ These tensions aren't abstract. They shape what we're allowed to analyze, what w
 
 And yet, this is exactly where the real work lives.
 
-Planning has always been about navigating constraints, tradeoffs, uncertainty, and imperfect systems. The challenge isn't to eliminate complexity. It's to be honest about it, to keep asking better questions, and to keep showing up with curiosity and humility anyway — even when the system doesn't make it easy.
+Planning has always been about navigating constraints, tradeoffs, uncertainty, and imperfect systems. The challenge isn't to eliminate complexity. It's to be honest about it, to keep asking better questions, and to keep showing up with curiosity and humility anyway, even when the system doesn't make it easy.
 
-It's a hard time to be a planner or modeler. But that might be a good sign — because we are dealing with the complexity instead of plowing highways through it.
+It's a hard time to be a planner or modeler. But that might be a good sign, because we are dealing with the complexity instead of plowing highways through it.

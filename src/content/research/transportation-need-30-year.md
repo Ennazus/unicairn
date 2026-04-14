@@ -1,6 +1,6 @@
 ---
 title: "What Does 'Transportation Need' Mean at a 30-Year Horizon?"
-description: "A case for measuring transportation need empirically — through experienced constraints rather than stated preferences — and why a small, stable set of questions could let us ask a simpler, more honest question about whether we're getting better or worse."
+description: "A case for measuring transportation need empirically, through experienced constraints rather than stated preferences, and why a small, stable set of questions could let us ask a simpler, more honest question about whether we're getting better or worse."
 pubDate: 2026-04-09
 ---
 
@@ -17,7 +17,7 @@ That discussion raised a familiar question: should transportation needs be defin
 
 Even when we aim to center lived experience, measurement itself is often shaped by preconceptions. Survey research shows how sensitive responses are to framing, and transportation studies have documented how solution-oriented prompts shape reported behavior (Stopher and Greaves 2007). When surveys implicitly assume particular interventions, we risk measuring alignment with professional values rather than uncovering unmet need.
 
-Transportation needs can instead be measured empirically by focusing on experienced constraints rather than stated preferences. A growing body of research does this by asking not what people want or what should be built, but what trips were needed and not made, what activities were foregone, and which barriers prevented travel — including time, cost, safety, reliability, or physical ability. Often described as suppressed or unmet travel, this work treats respondents as authoritative witnesses to their own experience without asking them to design systems (Palm et al. 2024; Hjorthol 2013; Luiu et al. 2017).
+Transportation needs can instead be measured empirically by focusing on experienced constraints rather than stated preferences. A growing body of research does this by asking not what people want or what should be built, but what trips were needed and not made, what activities were foregone, and which barriers prevented travel, including time, cost, safety, reliability, or physical ability. Often described as suppressed or unmet travel, this work treats respondents as authoritative witnesses to their own experience without asking them to design systems (Palm et al. 2024; Hjorthol 2013; Luiu et al. 2017).
 
 These measures allow us, first, to track over time whether transportation needs are actually being met as people experience them. When paired with the contextual information already collected in household travel surveys, they also allow us to examine which underlying conditions are associated with transportation security. Vehicle access, land use context, household resources, caregiving responsibilities, physical ability, and social connectedness become variables to be tested rather than assumptions to be asserted.
 

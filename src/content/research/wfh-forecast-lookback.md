@@ -1,6 +1,6 @@
 ---
 title: "Looking Back on Working From Home and Travel Forecasts"
-description: "Round 2 of looking back at forecasts I made. The behavioral prediction was largely right. The system-level inference was not — and the difference matters for how we make promises about what planning can achieve."
+description: "Round 2 of looking back at forecasts I made. The behavioral prediction was largely right. The system-level inference was not, and the difference matters for how we make promises about what planning can achieve."
 pubDate: 2026-04-01
 heroImage: "../../assets/1772064535982.jpg"
 ---
@@ -11,7 +11,7 @@ When I started working around 2006, working from home was commonly framed in tra
 
 ## The behavioral forecast was right
 
-On one level, that forecast was right. Working from home increased dramatically after COVID and remains far more common than it was before the pandemic. According to the American Community Survey, 5.7% of U.S. workers usually worked from home in 2019, compared with 13.3% in 2024. (I'm using ACS even though the question wording is atrocious — a topic for another day.)
+On one level, that forecast was right. Working from home increased dramatically after COVID and remains far more common than it was before the pandemic. According to the American Community Survey, 5.7% of U.S. workers usually worked from home in 2019, compared with 13.3% in 2024. (I'm using ACS even though the question wording is atrocious, a topic for another day.)
 
 The number of work trips made by people working from home did indeed go down, as shown in PSRC and MTC travel surveys. Peer-reviewed research shows that reductions in onsite work are associated with modest reductions in VMT and much larger proportional declines in transit ridership.
 
@@ -25,7 +25,7 @@ Inelasticity of auto VMT is unfortunately a strong characteristic of the U.S. bu
 
 As planners, the lesson is that we need to be more careful about how we translate behavioral change into promises about system-level outcomes. There is only so much we can do at an aggregate scale to change usage without giant policy or systems change. There isn't a magic bullet to reduce VMT.
 
-That's also why I like to focus back on improving individual experiences these days — helping people get to the activities that make them thrive, instead of looking at system metrics — because that's where we could actually make a difference.
+That's also why I like to focus back on improving individual experiences these days, helping people get to the activities that make them thrive, instead of looking at system metrics, because that's where we could actually make a difference.
 
 ---
 

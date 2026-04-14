@@ -1,6 +1,6 @@
 ---
 title: "The Score in Planning: What We Choose to Measure Changes What We Build"
-description: "C. Thi Nguyên's book on gamification made me think about how planning metrics quietly reshape the world — how congestion relief, VMT reduction, and mode share each capture something real while missing something essential."
+description: "C. Thi Nguyên's book on gamification made me think about how planning metrics quietly reshape the world: how congestion relief, VMT reduction, and mode share each capture something real while missing something essential."
 pubDate: 2026-04-09
 ---
 
@@ -12,7 +12,7 @@ In transportation and land use planning, this dynamic is not abstract. In very r
 
 ## When congestion became the goal
 
-For decades, transportation systems were optimized for congestion relief, guided by the intuition that reducing delay would naturally improve people's lives. Building more capacity felt rational and humane. Once congestion reduction was the target, the system reorganized around winning that game — by adding capacity, crowding out learning about deeper causes like land use, access, and choice. This is exactly the failure mode Nguyên warns about.
+For decades, transportation systems were optimized for congestion relief, guided by the intuition that reducing delay would naturally improve people's lives. Building more capacity felt rational and humane. Once congestion reduction was the target, the system reorganized around winning that game: by adding capacity, crowding out learning about deeper causes like land use, access, and choice. This is exactly the failure mode Nguyên warns about.
 
 ## VMT reduction helped, but didn't complete the picture
 
@@ -28,6 +28,6 @@ Even here, important aspects of human experience remain difficult to capture, an
 
 ## What are we actually trying to measure?
 
-What we ultimately want is a flourishing population — people who are healthy, connected, and able to live meaningful lives on their own terms.
+What we ultimately want is a flourishing population: people who are healthy, connected, and able to live meaningful lives on their own terms.
 
 I have been thinking about this problem for a while. The [Towards Human-Scale Transport Metrics](/work/human-scale-metrics) presentation I gave at TRB in 2020 was an attempt to work through what it would mean to measure transportation systems from the perspective of people's actual experiences rather than system-level proxies. The questions Nguyên raises make me think there is still a lot more to work out.

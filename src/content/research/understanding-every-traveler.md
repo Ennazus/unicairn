@@ -1,6 +1,6 @@
 ---
 title: "Measuring Every Mode, Understanding Every Traveler"
-description: "We can now measure where trips are made with high fidelity across nearly every mode. The harder and more exciting problem is filling in who made them and why — and building the place where that knowledge lives."
+description: "We can now measure where trips are made with high fidelity across nearly every mode. The harder and more exciting problem is filling in who made them and why, and building the place where that knowledge lives."
 pubDate: 2026-04-13
 tags: ["passive data", "household travel survey", "equity", "active transportation", "evidence"]
 ---

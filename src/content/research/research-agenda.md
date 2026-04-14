@@ -1,6 +1,6 @@
 ---
 title: "Research Agenda: Evidence, Decisions, and the Conditions That Connect Them"
-description: "An overview of four connected research threads asking what it actually takes for rigorous analysis to change what gets built — and a fifth thread on evaluation in complex behavioral systems."
+description: "An overview of four connected research threads asking what it actually takes for rigorous analysis to change what gets built, and a fifth thread on evaluation in complex behavioral systems."
 pubDate: 2026-03-01
 ---
 
@@ -16,7 +16,7 @@ Evidence-based medicine had to answer a prior question before it could become a 
 
 Planning has largely skipped this prior question. The field has invested heavily in data collection and analytical methods while producing relatively little rigorous research on whether those investments change what agencies decide to fund, build, or adopt.
 
-I can identify very few clear instances in twenty years of work where data I produced definitively changed a decision that would otherwise have gone differently. I can identify many instances where data was used decoratively — to justify decisions already made, to satisfy regulatory requirements, or to signal analytical sophistication without substantive influence. That is not a cynical conclusion. It is an empirical observation.
+I can identify very few clear instances in twenty years of work where data I produced definitively changed a decision that would otherwise have gone differently. I can identify many instances where data was used decoratively: to justify decisions already made, to satisfy regulatory requirements, or to signal analytical sophistication without substantive influence. That is not a cynical conclusion. It is an empirical observation.
 
 ## Thread 2: Evidence-Based Planning
 
@@ -32,7 +32,7 @@ My own AV scenario work from 2014–2015 provides a case study. Looking back now
 
 ## Thread 4: Measurement, Metrics, and What Gets Built
 
-There is a well-developed theoretical literature on how metrics shape what gets optimized — Goodhart's Law in economics, extensive work on performance management in public administration. What is less developed is the application of this literature to transportation planning, where metric choice has had documented material consequences for what gets built and who gets served.
+There is a well-developed theoretical literature on how metrics shape what gets optimized: Goodhart's Law in economics, extensive work on performance management in public administration. What is less developed is the application of this literature to transportation planning, where metric choice has had documented material consequences for what gets built and who gets served.
 
 Three cases: congestion as the organizing goal crowded out learning about land use and access as alternative levers. VMT reduction can be achieved on paper without improving lived experience. Mode share decline doesn't distinguish improved mobility from economic exclusion.
 
@@ -44,4 +44,4 @@ The problems I have described are not specific to transportation planning. They 
 
 AI is arriving at the same set of problems, at higher speed and higher stakes. My interest is not in becoming an AI researcher. It is in contributing a methodological perspective that is genuinely underrepresented in current AI evaluation discourse: the perspective of practitioners who have spent careers asking how you evaluate a system whose outputs shape high-stakes public decisions, under conditions where the system's behavior cannot be fully understood from benchmark performance alone.
 
-The travel demand modeling community learned this, sometimes painfully, over three decades. That class of problem — evaluation under changed conditions, for a system that shapes consequential public decisions — is the connective tissue across all four threads.
+The travel demand modeling community learned this, sometimes painfully, over three decades. That class of problem, evaluation under changed conditions, for a system that shapes consequential public decisions, is the connective tissue across all four threads.

@@ -1,6 +1,6 @@
 ---
 title: "The Quandary of Accessibility Metrics"
-description: "We care a lot about accessibility in transportation planning — but measuring it in a way that is both easy to understand and statistically rigorous has proven surprisingly difficult. A look at three approaches and their tradeoffs."
+description: "We care a lot about accessibility in transportation planning, but measuring it in a way that is both easy to understand and statistically rigorous has proven surprisingly difficult. A look at three approaches and their tradeoffs."
 pubDate: 2015-09-11
 ---
 
@@ -8,16 +8,16 @@ pubDate: 2015-09-11
 
 ---
 
-We measure many things when evaluating projects, but one impact we care a lot about is **accessibility** — or the amount of economic, social, or other opportunities available to people through travel. In our [benefit-cost tool](http://www.psrc.org/data/models/benefit-cost-analysis/), we must turn accessibility into a dollar value, but this is a challenge: accessibility is quite hard to quantify in a way that is both a) easy-to-understand and b) statistically comprehensive and based on human behavior.
+We measure many things when evaluating projects, but one impact we care a lot about is **accessibility**, meaning the amount of economic, social, or other opportunities available to people through travel. In our [benefit-cost tool](http://www.psrc.org/data/models/benefit-cost-analysis/), we must turn accessibility into a dollar value, but this is a challenge: accessibility is quite hard to quantify in a way that is both a) easy-to-understand and b) statistically comprehensive and based on human behavior.
 
 I haven't found a measure yet that satisfies both criteria. Here are three metrics we've used in our work, along with their benefits and shortcomings.
 
 ## Metric 1: Number of jobs reachable within 30 minutes
 
-One way to quantify accessibility is to show the number of jobs that can be reached within 30 minutes from a given location by a specific travel mode. This measure is somewhat intuitive to planners, which makes it strong on the understandability dimension — but it suffers from several problems:
+One way to quantify accessibility is to show the number of jobs that can be reached within 30 minutes from a given location by a specific travel mode. This measure is somewhat intuitive to planners, which makes it strong on the understandability dimension, but it suffers from several problems:
 
 - I can't think of how to turn "number of jobs available in a certain amount of time" into a dollar amount. Can you?
-- This measure suffers from **threshold effects** — why thirty minutes? Why not thirty-five or fifteen?
+- This measure suffers from **threshold effects**: why thirty minutes? Why not thirty-five or fifteen?
 - It would vary strongly by mode, making comparison across modes difficult.
 
 Although accessibility to jobs has issues as a rigorous metric, it sure does make a pretty map. The [University of Minnesota Accessibility Observatory](http://access.umn.edu/research/america/transit/2014/maps/) has produced beautiful maps showing the number of jobs available from any given location by walking and transit in Seattle.
@@ -28,7 +28,7 @@ Another way to measure accessibility is by measuring **travel times** and applyi
 
 Several problems arise from this approach:
 
-**Sometimes people actually enjoy traveling,** so it shouldn't necessarily be a cost. [People are actually happiest when they commute by walking](http://www.citylab.com/commute/2014/08/which-mode-of-travel-provides-the-happiest-commute/378673/), even though it is the slowest mode. Also, [the ideal commute time is not zero](http://link.springer.com/article/10.1023/A:1010366321778) — workers reason that an ideal commute provides mental transition time between home and work. Travel time is not always a dis-benefit, though we often assume it to be out of convenience.
+**Sometimes people actually enjoy traveling,** so it shouldn't necessarily be a cost. [People are actually happiest when they commute by walking](http://www.citylab.com/commute/2014/08/which-mode-of-travel-provides-the-happiest-commute/378673/), even though it is the slowest mode. Also, [the ideal commute time is not zero](http://link.springer.com/article/10.1023/A:1010366321778); workers reason that an ideal commute provides mental transition time between home and work. Travel time is not always a dis-benefit, though we often assume it to be out of convenience.
 
 **People's value of time depends heavily on context**: trying to make a doctor's appointment in congested traffic (high value) versus walking to a park on a pretty street (low value).
 
@@ -48,4 +48,4 @@ The general public will not abide sigmas in the wild, and they likely revolt upo
 
 ---
 
-This is a problem I've continued to think about. My [Towards Human-Scale Transport Metrics](/work/human-scale-metrics) presentation at TRB in 2020 was a later attempt to address it — starting from the question of what people are actually trying to do when they travel, rather than from the system-level proxies we've built up around it. Comments on solving the accessibility metric quandary are still very welcome.
+This is a problem I've continued to think about. My [Towards Human-Scale Transport Metrics](/work/human-scale-metrics) presentation at TRB in 2020 was a later attempt to address it, starting from the question of what people are actually trying to do when they travel, rather than from the system-level proxies we've built up around it. Comments on solving the accessibility metric quandary are still very welcome.

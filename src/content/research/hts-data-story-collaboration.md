@@ -1,6 +1,6 @@
 ---
 title: "Discovering Household Travel Data Stories Through Collaboration"
-description: "In 2020, the PSRC data team formed a working group to learn how Household Travel Survey data could inform urban planning policy. Here's what we found — on displacement, race, telework, deliveries, and modeling."
+description: "In 2020, the PSRC data team formed a working group to learn how Household Travel Survey data could inform urban planning policy. Here's what we found: on displacement, race, telework, deliveries, and modeling."
 pubDate: 2021-03-11
 ---
 
@@ -43,7 +43,7 @@ A new question asked on the 2019 survey was why people moved from their previous
 
 - About a quarter of households that moved in the past five years reported that they relocated for one or more negative reasons: cost of housing, forced to move, change in income, or loss of community. Cost of housing was by far the top reason.
 - One in five white households (22%) felt pressured to leave their homes, as did 14% of Asian households. But nearly one in three (30%) Other People of Color households moved elsewhere because they had to.
-- Displacement is truly a regional phenomenon — across the region and its counties, displacement was reported at statistically the same rate.
+- Displacement is truly a regional phenomenon: across the region and its counties, displacement was reported at statistically the same rate.
 
 More on this in [blog posts about our displacement findings](https://www.psrc.org/whats-happening/blog/cost-housing-top-reason-displacement). [The Seattle Times also covered it.](https://www.seattletimes.com/seattle-news/data/as-seattle-gentrifies-one-quarter-of-recent-movers-were-forced-out-survey-shows/)
 
@@ -53,7 +53,7 @@ Racial equity is a key part of PSRC's planning efforts. We had to figure out how
 
 We reported that "Other People of Color were the most likely to take transit to work (17%), followed by Asians (11%) and whites (9%)." We also analyzed African American travel separately, finding that African American people were much more likely to live in a household with no cars than non-Hispanic Whites (around 1 in 5 vs. 1 in 20).
 
-A puzzle we encountered: **how do we describe a household's race?** Not only are people multi-racial — households are also multi-racial. Residential and vehicle ownership choices are made at the household level. Our approach assigned households to racial categories based on the composition of adults.
+A puzzle we encountered: **how do we describe a household's race?** Not only are people multi-racial, but households are also multi-racial. Residential and vehicle ownership choices are made at the household level. Our approach assigned households to racial categories based on the composition of adults.
 
 ### Telework Patterns
 
@@ -61,7 +61,7 @@ Pre-COVID telework data from the 2019 survey showed:
 
 1. 10% of workers teleworked 6–12 hours a day; 14% less than six hours but more than zero.
 2. People who teleworked part-time traveled 10% fewer miles by car; full-time teleworkers traveled 34% less distance.
-3. The number of trips people who teleworked made was similar to non-teleworkers — they had shorter trips, which is why car distance is reduced. People substituted non-work trips for work trips.
+3. The number of trips people who teleworked made was similar to non-teleworkers; they had shorter trips, which is why car distance is reduced. People substituted non-work trips for work trips.
 4. For households with income of \$150,000+, the odds of teleworking were 30% higher than other income categories.
 5. Hispanic and Asian workers were 20–30% more likely to telework than whites. African American workers were 25% less likely to telework than whites.
 
@@ -81,11 +81,11 @@ High-income households received many more deliveries than low-income ones. [The 
 
 From 2017 to 2019, the share of regional adults who had ever used a ride-hailing service **went up from 24% to 35%**. Over half of Seattle adults had used ride-hailing by 2019.
 
-Around 73% of ride-hailing and carsharing users commuted by walking/biking, carpool, or transit — compared to more than 70% of regional workers using a single-occupancy vehicle.
+Around 73% of ride-hailing and carsharing users commuted by walking/biking, carpool, or transit, compared to more than 70% of regional workers using a single-occupancy vehicle.
 
 ### Commuting Behavior
 
-**Trips to or from work are only 24% of all weekday trips.** Workers with incomes under \$10,000 have commutes of around 14 minutes, whereas workers with incomes from \$50,000–\$74,999 have commutes around 27 minutes. The average travel time to work is about the same for workers in households with incomes greater than \$75,000 — around 33 minutes.
+**Trips to or from work are only 24% of all weekday trips.** Workers with incomes under \$10,000 have commutes of around 14 minutes, whereas workers with incomes from \$50,000–\$74,999 have commutes around 27 minutes. The average travel time to work is about the same for workers in households with incomes greater than \$75,000, around 33 minutes.
 
 ## Model Estimation
 

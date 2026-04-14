@@ -1,6 +1,6 @@
 ---
 title: "Women's Diverse Travel Needs Often Go Overlooked"
-description: "An analysis of PSRC household travel survey data showing how women's trip patterns, transit use, and travel burdens differ by race, income, and age — and what planning should do about it."
+description: "An analysis of PSRC household travel survey data showing how women's trip patterns, transit use, and travel burdens differ by race, income, and age, and what planning should do about it."
 pubDate: 2023-03-28
 ---
 
@@ -12,7 +12,7 @@ Women have [transportation needs](http://libraryarchives.metro.net/DB_Attachment
 
 With the arrival of the COVID-19 pandemic, we saw a greater trend towards telecommuting for some people and continued trends in aging. Housing prices continue to soar and childcare options continue to degrade. With these new considerations at play, compounded with the existing burdens on women, when will the transportation system evolve for women across diverse backgrounds?
 
-The [Puget Sound Regional Household Travel Survey](https://www.psrc.org/our-work/household-travel-survey-program) contains detailed information about travel behaviors by race, ethnicity, gender, income, and location. The 2017, 2019, and 2021 surveys collected day-to-day information from households in the central Puget Sound region — how we traveled, where we went, how long it took — prior to COVID-19 and after.
+The [Puget Sound Regional Household Travel Survey](https://www.psrc.org/our-work/household-travel-survey-program) contains detailed information about travel behaviors by race, ethnicity, gender, income, and location. The 2017, 2019, and 2021 surveys collected day-to-day information from households in the central Puget Sound region: how we traveled, where we went, how long it took, prior to COVID-19 and after.
 
 ## Travel demands put different pressures on women
 
@@ -30,7 +30,7 @@ Some women of color experience poverty and low auto ownership at much higher rat
 
 ## Women of color use transit most
 
-Women of color in the region used transit on more of their trips than men and white, non-Hispanic women — prior to COVID-19. Women of color used transit on nearly double the share of their trips as compared to white, non-Hispanic women. Women of color most likely used transit more than white, non-Hispanic women because of having lower incomes, fewer autos, and living in more transit-friendly areas, but more data is needed to confirm this hypothesis.
+Women of color in the region used transit on more of their trips than men and white, non-Hispanic women, prior to COVID-19. Women of color used transit on nearly double the share of their trips as compared to white, non-Hispanic women. Women of color most likely used transit more than white, non-Hispanic women because of having lower incomes, fewer autos, and living in more transit-friendly areas, but more data is needed to confirm this hypothesis.
 
 *[Interactive transit use by gender and race chart available in the [original post](https://psrc.github.io/2023/womens-travel).]*
 
