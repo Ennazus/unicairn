@@ -76,6 +76,29 @@ const posts = (await getCollection('research'))
 	</body>
 </html>
 
+<script>
+(function () {
+	if (sessionStorage.getItem('typed')) return;
+	sessionStorage.setItem('typed', '1');
+
+	const el = document.querySelector('.name') as HTMLElement;
+	if (!el) return;
+
+	const full = el.textContent || '';
+	el.textContent = '';
+	el.style.borderRight = '2px solid rgba(167,139,250,0.8)';
+
+	let i = 0;
+	const interval = setInterval(() => {
+		el.textContent = full.slice(0, ++i);
+		if (i >= full.length) {
+			clearInterval(interval);
+			setTimeout(() => { el.style.borderRight = 'none'; }, 600);
+		}
+	}, 60);
+})();
+</script>
+
 <style>
 	.hero {
 		padding-top: 3.5rem;
