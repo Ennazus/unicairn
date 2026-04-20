@@ -11,6 +11,7 @@ const research = defineCollection({
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
 			heroImage: z.optional(image()),
+		heroImageCaption: z.string().optional(),
 		}),
 });
 
